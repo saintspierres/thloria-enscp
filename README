@@ -1,0 +1,150 @@
+Quelques remarques importantes concernant:
+
+  - la classe en général ;
+  - la version de LaTeX2e nécessaire ;
+  - la compilation de l'exemple; 
+  - la documentation ;
+  - les modifications simples à thloria ;
+  - la compatibilité avec LaTeX2e ;
+  - incompatibilité avec certains packages ;
+  - les questions TeX et LaTeX sans rapport avec thloria.
+
+Qu'est-ce que thloria ?
+-----------------------
+
+La classe thloria, décrite sur le (La)TeX navigator 
+(http://www.loria.fr/tex) est une classe qui comme son
+nom l'indique a été réalisée pour satisfaire des besoins
+interne du LORIA à Nancy.
+
+
+Version de LaTeX2e
+------------------
+
+En raison de changements intervenus en décembre 1995,
+en décembre 1996 et en février 1997 dans LaTeX2e, j'ai été obligé de modifier 
+la classe thloria à trois reprises pour que celle-ci
+fonctionne avec l'installation la plus récente. La classe thloria
+actuelle ne fonctionne donc pas avec des versions de LaTeX2e antérieures à
+celle du 1/12/1996, patch 1. 
+Toutefois, à partir de la version 0.77, l'option `noprintercorrection'
+peut être utilisée pour passer outre la modification de LaTeX
+qui pose problème.
+À partir de la version 0.93, cette option a été supprimée et il ne
+devrait plus y avoir de problèmes.
+
+Je distribue normalement uniquement la derniere version, 
+mais il se peut que j'aie une version plus ancienne dans un coin.
+
+Profitez-en donc pour installer la dernière version de LaTeX2e !
+
+  [Si vous avez une version de TeX, et si vous pouvez lancer `initex',
+   vous pouvez faire cette mise-à-jour vous même assez facilement.
+   Commencez par récupérer:
+
+     - la dernière version de LaTeX  : sur CTAN(*) en macros/latex/unpacked
+     - la dernière version de french : idem, en language/french
+     - les polices EC : toujours sur CTAN, en fonts/ec
+
+   (*) Un miroir est ftp.loria.fr/pub/ctan
+
+   Pour l'installation d'un LaTeX anglophone, il suffit de lancer
+   initex dans le répertoire `unpacked' ce qui donne le format latex.fmt.
+   Pour l'installation d'une version francisée, lisez attentivement ce
+   qui concerne babel ou french.
+   Commencez par installer un LaTeX anglophone, puis les polices EC.
+   La francisation sera plus simple. Faites aussi attention au fichier
+   language.dat de babel ou french. 
+   Une erreur fréquente est d'en avoir plusieurs.
+   Voyez comment positionner les variables d'environnement TEXINPUTS,
+   TEXFORMATS, MFINPUTS (pour les polices EC), TFMINPUTS (polices EC).
+
+   Je ne peux pas vous donner plus de détails, voyez avec votre ingénieur
+   systeme ou en postant dans les news pour plus de details sur
+   l'installation. Merci de votre compréhension.
+
+   (Ces quelques indications sont maintenant assez désuètes, car 
+    les opérations sont en général beaucoup plus simples maintenant
+    avec des distributions comme le CD TeXlive. 21/11/2000)
+  ]
+
+Compilation de thloria-example.tex
+------------------------------------
+
+La compilation de thloria-example.tex nécessite
+un certain nombre de précautions:
+
+  1) Il faut introduire la ligne \DontShowLogos car vous n'avez
+     pas par défaut les logos de notre université;
+     (je ne fais pas ce changement, car cela me permet de donner
+      le même fichier de test à nos utilisateurs et ici tout va bien)
+
+  2) L'exemple utilise des `packages' qui ne sont peut-être
+     pas présents sur votre installation : minitoc, named, etc.
+     Il faut donc les installer.
+
+Si les précautions d'usage ont été prises, vous pouvez compiler
+l'exemple. Sinon, vous pouvez toujours vous en inspirer pour écrire
+votre fichier de thèse.
+
+Documentation
+-------------
+
+Le manuel de la classe thloria est disponible en ligne 
+en http://www.loria.fr/tex dans la rubrique `Classes'
+ou bien dans la rubrique `Guide local'. 
+La documentation du `package' french (utilisé par thloria)
+est aussi disponible sur ce site, dans la rubrique `packages'.
+
+Modifications simples à thloria
+---------------------------------
+
+Il y a quelques exemples dans le répertoire `contrib'.
+Ce sont des exemples réels.
+Si vous-mêmes faites des modifications que vous pensez pouvoir
+être utiles à d'autres, vous pouvez me les soumettre et je les
+ajouterai dans ma distribution.  
+
+Compatibilité avec LaTeX2e
+---------------------------
+
+Normalement, la classe thloria fonctionne avec la dernière
+version de LaTeX2e. Cependant, si votre version de thloria
+prend de l'âge, et que vous installez une nouvelle version
+de LaTeX2e, il se peut que la classe ne fonctionne plus.
+Il est alors probable que j'aurai de mon côté adapté
+thloria. Il suffira de m'envoyer un message pour avoir
+la dernière version le cas échéant.
+
+Incompatibilité avec certains packages
+---------------------------------------
+
+La classe thloria risque fort d'être incompatible avec
+tout ce qui touche aux commandes de sectionnement,
+aux en-têtes, et à la mise en page en général.
+En particulier, la classe thloria est incompatible avec
+le package `fancyheadings'. J'ai prévu d'y remédier un jour.
+thloria est compatible avec le package minitoc.
+Si vous pensez que certaines incompatibilités devraient
+être supprimées, signalez-le.
+
+Questions TeX et LaTeX sans rapport avec thloria
+--------------------------------------------------
+
+Je n'y répondrai pas.
+
+
+======================================================================
+
+Denis Roegel, 18 juillet 2002
+roegel@loria.fr
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+% Exemple de style de glossaire pour thloria
+% D. Roegel 01/06/1998
+
+preamble "\n \\begin{TheGlossary} \n"
+postamble "\n\n \\end{TheGlossary}\n"
+keyword "\\glossaryentry"
+% pour qu'il n'y ait pas de virgule apres une entree
+delim_0 ""
